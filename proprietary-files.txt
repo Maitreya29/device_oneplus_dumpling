@@ -53,14 +53,37 @@ vendor/etc/oneplus5T_vstab_db_4k_video_0_30fps.config
 vendor/etc/oneplus5T_vstab_db_720p_video_0_30fps.config
 vendor/etc/oneplus5T_vstab_db_720p_video_1_30fps.config
 
+# Fingerprint firmware
+etc/firmware/gfp5288.b00
+etc/firmware/gfp5288.b01
+etc/firmware/gfp5288.b02
+etc/firmware/gfp5288.b03
+etc/firmware/gfp5288.b04
+etc/firmware/gfp5288.b05
+etc/firmware/gfp5288.b06
+etc/firmware/gfp5288.b07
+etc/firmware/gfp5288.mdt
+etc/firmware/gfp5288d.b00
+etc/firmware/gfp5288d.b01
+etc/firmware/gfp5288d.b02
+etc/firmware/gfp5288d.b03
+etc/firmware/gfp5288d.b04
+etc/firmware/gfp5288d.b05
+etc/firmware/gfp5288d.b06
+etc/firmware/gfp5288d.b07
+etc/firmware/gfp5288d.mdt
+
+
 # Fingerprint sensor
 vendor/lib/hw/fingerprint.msm8998.so:vendor/lib/hw/fingerprint.fpc.so
 vendor/lib/hw/goodix.fingerprint.msm8998.so:vendor/lib/hw/fingerprint.goodix.so
+vendor/lib/hw/fingerprint.qcom.so
 vendor/lib/libgf_ca.so
 vendor/lib/libgf_hal.so
 vendor/lib/libgoodixfingerprintd_binder.so
 vendor/lib64/hw/fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.fpc.so
 vendor/lib64/hw/goodix.fingerprint.msm8998.so:vendor/lib64/hw/fingerprint.goodix.so
+vendor/lib64/hw/fingerprint.qcom.so
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixfingerprintd_binder.so
