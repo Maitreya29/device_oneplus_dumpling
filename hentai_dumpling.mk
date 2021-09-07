@@ -18,13 +18,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+#
+# All components inherited here go to system_ext image
+#
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_system_ext.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
+
+#
+# All components inherited here go to vendor image
+#
+# TODO(b/136525499): move *_vendor.mk into the vendor makefile later
+$(call inherit-product, $(SRC_TARGET_DIR)/product/handheld_vendor.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
+
 # Inherit from dumpling device
 $(call inherit-product, device/oneplus/dumpling/device.mk)
 
-# Inherit some common radiant stuff.
-$(call inherit-product, vendor/radiant/config/common_full_phone.mk)
+# Hentai
+$(call inherit-product, vendor/hentai/build/product/hentai_product.mk)
 
-PRODUCT_NAME := radiant_dumpling
+
+PRODUCT_NAME := hentai_dumpling
 PRODUCT_DEVICE := dumpling
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
@@ -45,3 +59,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := OnePlus/OnePlus5T/OnePlus5T:10/QKQ1.191014.012/2010292059:user/release-keys
 
 TARGET_VENDOR := oneplus
+
+PRODUCT_VENDOR_KERNEL_HEADERS := device/oneplus/msm8998-common/kernel-headers

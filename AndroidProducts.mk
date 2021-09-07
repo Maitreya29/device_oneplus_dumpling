@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/radiant_dumpling.mk
+    $(LOCAL_DIR)/hentai_dumpling.mk
 
 COMMON_LUNCH_CHOICES := \
-    radiant_dumpling-user \
-    radiant_dumpling-userdebug \
-    radiant_dumpling-eng
+    hentai_dumpling-user \
+    hentai_dumpling-userdebug \
+    hentai_dumpling-eng
